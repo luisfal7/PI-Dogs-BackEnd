@@ -11,6 +11,16 @@ const router = express.Router();
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 
+router.get('/', async function(req,res,next){
+
+    try {      
+        res.status(200).json({'get /':'prueba de backend'})
+    } catch (err) {
+        next(err)
+    }
+    
+})
+
 router.get('/dogs', async function(req,res,next){
 
     const name = req.query.name
