@@ -15,8 +15,7 @@ const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}
     max: 5,
     min: 0,
     idle: 10000
-  },
-  port:56198,
+  }
 });
 const basename = path.basename(__filename);
 
