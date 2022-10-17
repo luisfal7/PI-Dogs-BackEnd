@@ -14,14 +14,7 @@ const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}
        require:true,
        rejectUnauthorized:false
      }                             
-    },
-  host: '127.0.0.1',
-  dialect: 'postgres',
-  pool: {
-    max: 5,
-    min: 0,
-    idle: 10000
-  }
+    }
 });
 const basename = path.basename(__filename);
 
