@@ -30,11 +30,6 @@ module.exports = sequelize => {
       type: DataTypes.STRING,
       allowNull: true,
     },
-    danger: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-      defaultValue: Math.ceil(Math.random()) * 10
-    },
     image: { type: DataTypes.JSONB, 
       allowNull: true,
     }
